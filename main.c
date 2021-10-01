@@ -33,14 +33,7 @@ void moveOut(int apartNumber, List *root);
 int feeCalc(List *root);
 int elevatorPos(List *root);
 int isFree(int apartNumber, List *root);
-int validateDate(char date[11]){
-    if (date[0]<'0' || date[0]>3) return 0;
-    if (date[1])<0 || date[1]>9) return 0;
-    if(date[3]<0 || date[3]>1) return 0;
-    if ((date[3]==0)&&(date[4]<0||date[4]>9)) return 0;
-    if ((date[3]==1)&&(date[4]<0 || date[4]>2)) return 0;
 
-}
 int main()
 {
     int floor, app, choosen;
